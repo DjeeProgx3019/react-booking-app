@@ -1,0 +1,53 @@
+Creating a react application:
+	Syntax: 
+		npx create-react-app <project-name>
+
+Delete unnecessary files from the newly created project:
+Application > src
+- App.test.js
+- index.css
+- logo.svg
+- reportWebVitals.js
+
+Remove the importation of the deleted files:
+Application > src > index.js
+ - index.css
+ - reportWebVitals.js (including reportWebVitals())
+
+Application > src > App.js
+ - logo.svg
+ - elements under <div> tag
+
+Install the JavaScript (Babel) Linting for code readability.
+Sublime Text Editor
+
+	1. Open Command Palette
+
+	Linux and Windows
+	Ctrl + Shift + P
+	MacOS
+	Cmd + Shift + P
+
+	2. In the input field type the word "install" and select the "Package Control: Install Package" option to trigger an installation of an add-on feature for sublime text editor.
+
+	3. Type "babel" in the input field to search for the "Babel" linting to be installed.
+
+	4. Change the linting of the sublime text editor to "Javascript(Babel)" (Bottom right corner of the screen.)
+
+ReactJS components
+- This are reusable parts of our react app.
+- The are independent UI parts of our app.
+- Components are functions that return react element.
+- Components naming convetion: PascalCase
+	- Captilized letters for all words of the function name and file name associated with it.
+
+Rendering vs Mounting
+- "Rendering" refers to the process of calling/invoking  a component returning a set of instructions for creating DOM.
+- "Mounting" it is when React JS "renders" or display the component and builds the initial DOM based on the instruction.
+
+Import Rules:
+- It's also good practice to organize importing of modules to improve code readability.
+- The example above follows the following pattern:
+	- imports from built-in react modules
+	- imports from downloaded packages
+	- imports from user defined components
